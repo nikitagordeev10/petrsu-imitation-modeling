@@ -1,0 +1,63 @@
+############################################## 1С ##############################################
+
+# Файлы окружения
+.env
+env.json
+
+# Файлы конфигурации и временные файлы
+ConfigDumpInfo.xml
+lastUploadedCommit.txt
+lastUploadedConfigDumpInfo.xml
+
+# Логи и служебные файлы платформы 1С
+1CHelpIndex
+1Cv8FTxt
+1Cv8JobScheduler
+1Cv8Log
+
+# Каталоги сборки и отчётов
+build/
+out/
+allure-report/
+test-results/
+.scannerwork
+.sonarlint/
+
+# Файлы IDE
+.idea/
+.vscode/
+
+# Каталоги и файлы внешних инструментов
+oscript_modules/
+tools/vanessa-automation-single.*
+tools/xUnitFor1C-*
+
+# Временные файлы и каталоги конфигурации
+*.cf
+*.cfl
+*.cgr
+*.lgd
+*.CD
+*.1CD
+*.1CL
+
+# Каталоги исходного кода и другие временные каталоги
+src/Config/
+xf_img/
+xf_Tests/
+xf_vanessa-automation-single.*
+sources/
+
+# Исключение временных файлов из корневой директории
+~$*
+*.bak
+*.tmp
+*.lock
+
+# Игнорирование временных файлов в случае работы через Docker
+docker-compose.override.yml
+.dockerignore
+
+# Добавлено для логов работы с GIT
+*.log
+
