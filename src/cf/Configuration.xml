@@ -275,7 +275,9 @@
 			<CommonPicture>Треугольники1</CommonPicture>
 			<CommonPicture>Треугольники2</CommonPicture>
 			<CommonPicture>Треугольники3</CommonPicture>
-			<CommonPicture>Геликоид</CommonPicture>
+			<CommonPicture>Геликоид1</CommonPicture>
+			<CommonPicture>Геликоид2</CommonPicture>
+			<CommonPicture>Геликоид3</CommonPicture>
 			<CommonForm>Форма</CommonForm>
 			<DataProcessor>ГенерацияИПроверкаРаспределения</DataProcessor>
 			<DataProcessor>ОценкаКовариацийИПроверкаКорреляции</DataProcessor>
