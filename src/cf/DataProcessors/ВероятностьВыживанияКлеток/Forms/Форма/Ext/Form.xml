@@ -4,7 +4,7 @@
 	<ChildItems>
 		<PictureDecoration name="Декорация1" id="3">
 			<Picture>
-				<xr:Ref>CommonPicture.Тема2_Задание2</xr:Ref>
+				<xr:Ref>CommonPicture.Тема2_Задание1</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<ContextMenu name="Декорация1КонтекстноеМеню" id="4"/>
@@ -38,6 +38,7 @@
 					<v8:content>Сгенерировать</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Action>Сгенерировать</Action>
 		</Command>
 	</Commands>
 </Form>

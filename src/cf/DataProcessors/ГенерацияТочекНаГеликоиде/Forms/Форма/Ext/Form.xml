@@ -10,6 +10,14 @@
 			<ContextMenu name="Декорация1КонтекстноеМеню" id="4"/>
 			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="5"/>
 		</PictureDecoration>
+		<PictureDecoration name="Декорация2" id="6">
+			<Picture>
+				<xr:Ref>CommonPicture.Геликоид</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<ContextMenu name="Декорация2КонтекстноеМеню" id="7"/>
+			<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="8"/>
+		</PictureDecoration>
 		<Button name="Сгенерировать" id="1">
 			<Type>UsualButton</Type>
 			<CommandName>Form.Command.Сгенерировать</CommandName>
