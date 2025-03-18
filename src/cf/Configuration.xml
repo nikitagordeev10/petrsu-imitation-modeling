@@ -254,7 +254,7 @@
 			<ConfigurationInformationAddress/>
 			<DataLockControlMode>Managed</DataLockControlMode>
 			<ObjectAutonumerationMode>NotAutoFree</ObjectAutonumerationMode>
-			<ModalityUseMode>DontUse</ModalityUseMode>
+			<ModalityUseMode>Use</ModalityUseMode>
 			<SynchronousPlatformExtensionAndAddInCallUseMode>DontUse</SynchronousPlatformExtensionAndAddInCallUseMode>
 			<InterfaceCompatibilityMode>Taxi</InterfaceCompatibilityMode>
 			<InterfaceVersion85ConvertationMode>DontUse</InterfaceVersion85ConvertationMode>
@@ -270,8 +270,14 @@
 			<CommonPicture>Тема1_Задание3</CommonPicture>
 			<CommonPicture>Тема1_Задание4</CommonPicture>
 			<CommonPicture>Тема1_Задание5</CommonPicture>
+			<CommonPicture>Тема2_Задание1</CommonPicture>
+			<CommonPicture>Тема2_Задание2</CommonPicture>
+			<CommonPicture>Треугольники1</CommonPicture>
+			<CommonPicture>Треугольники2</CommonPicture>
+			<CommonPicture>Треугольники3</CommonPicture>
 			<DataProcessor>ГенерацияИПроверкаРаспределения</DataProcessor>
 			<DataProcessor>ОценкаКовариацийИПроверкаКорреляции</DataProcessor>
+			<DataProcessor>ПлощадьПересеченияТреугольников</DataProcessor>
 			<DataProcessor>РасчетVarПортфеля</DataProcessor>
 			<DataProcessor>ВероятностьСрабатыванияДетектора</DataProcessor>
 			<DataProcessor>ГенерацияТочекНаГеликоиде</DataProcessor>
