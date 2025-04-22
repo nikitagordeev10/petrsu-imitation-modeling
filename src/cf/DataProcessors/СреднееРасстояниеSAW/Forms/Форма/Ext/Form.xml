@@ -1,18 +1,89 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
 	<ChildItems>
+		<LabelDecoration name="Декорация6" id="6">
+			<Font ref="style:LargeTextFont" kind="StyleItem"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задача:</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация6КонтекстноеМеню" id="7"/>
+			<ExtendedTooltip name="Декорация6РасширеннаяПодсказка" id="8"/>
+		</LabelDecoration>
 		<PictureDecoration name="Декорация1" id="1">
+			<Width>60</Width>
+			<Height>15</Height>
+			<PictureSize>Proportionally</PictureSize>
 			<Picture>
 				<xr:Ref>CommonPicture.Тема2_Задание2</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<Border width="1">
+				<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+			</Border>
 			<ContextMenu name="Декорация1КонтекстноеМеню" id="2"/>
 			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="3"/>
 		</PictureDecoration>
+		<LabelDecoration name="Декорация3" id="12">
+			<Font ref="style:LargeTextFont" kind="StyleItem"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>План решения:</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация3КонтекстноеМеню" id="13"/>
+			<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="14"/>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация8" id="15">
+			<Width>60</Width>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Требуется смоделировать случайное блуждание без самопересечений (Self-Avoiding Walk, SAW) на двумерной решетке и оценить среднее расстояние от начальной точки до конечной после N шагов.
+
+Начальные условия:
+Старт из точки (0, 0).
+Запрещены самопересечения (точка не должна посещаться дважды).
+На каждом шаге k (от 1 до n):
+Выбираем направление (вниз/вверх/влево/вправо).
+
+Обычный случайный выбор направлений приводит к частым тупикам (когда все варианты шагов ведут в занятые точки).
+-) Генерировать только допустимые шаги (исключать направления, ведущие к самопересечениям).
+-) Взвешивать вероятности направлений, чтобы избежать смещения оценки.
+
+Проверяем:
+Если шаг ведет в занятую точку → отбрасываем и пробуем снова.
+Если шаг допустим → запоминаем новую позицию.
+Если нет допустимых направлений → путь завершается досрочно (тупик).
+
+Результат:
+Успешный путь длины n или обрыв
+</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация8КонтекстноеМеню" id="16"/>
+			<ExtendedTooltip name="Декорация8РасширеннаяПодсказка" id="17"/>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация7" id="9">
+			<Font ref="style:LargeTextFont" kind="StyleItem"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Решение:</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация7КонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="Декорация7РасширеннаяПодсказка" id="11"/>
+		</LabelDecoration>
 		<Button name="Сгенерировать" id="4">
 			<Type>UsualButton</Type>
-			<CommandName>Form.Command.Сгенерировать</CommandName>
+			<CommandName>Form.Command.ЗапуститьМоделирование</CommandName>
 			<ExtendedTooltip name="СгенерироватьРасширеннаяПодсказка" id="5"/>
 		</Button>
 	</ChildItems>
@@ -25,17 +96,17 @@
 		</Attribute>
 	</Attributes>
 	<Commands>
-		<Command name="Сгенерировать" id="1">
+		<Command name="ЗапуститьМоделирование" id="1">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сгенерировать</v8:content>
+					<v8:content>Запустить моделирование</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сгенерировать</v8:content>
+					<v8:content>Запустить моделирование</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>Сгенерировать</Action>

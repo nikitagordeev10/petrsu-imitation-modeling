@@ -1,19 +1,104 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
 	<ChildItems>
+		<LabelDecoration name="Декорация8" id="12">
+			<Font ref="style:LargeTextFont" kind="StyleItem"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задача:</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация8КонтекстноеМеню" id="13"/>
+			<ExtendedTooltip name="Декорация8РасширеннаяПодсказка" id="14"/>
+		</LabelDecoration>
 		<PictureDecoration name="Декорация1" id="3">
+			<Width>60</Width>
+			<Height>14</Height>
+			<PictureSize>Proportionally</PictureSize>
 			<Picture>
 				<xr:Ref>CommonPicture.Тема2_Задание1</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<Border width="1">
+				<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+			</Border>
 			<ContextMenu name="Декорация1КонтекстноеМеню" id="4"/>
 			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="5"/>
 		</PictureDecoration>
-		<Button name="Сгенерировать" id="1">
+		<LabelDecoration name="Декорация6" id="6">
+			<Font ref="style:LargeTextFont" kind="StyleItem"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>План решения:</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация6КонтекстноеМеню" id="7"/>
+			<ExtendedTooltip name="Декорация6РасширеннаяПодсказка" id="8"/>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация9" id="15">
+			<Width>60</Width>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Метод Монте-Карло — это численный способ оценки сложных вероятностей и математических ожиданий с помощью случайного моделирования. Однако его главный недостаток — высокая дисперсия (разброс) оценок, из-за чего для достижения точности требуется очень много испытаний.
+
+Методы понижения дисперсии — это специальные техники, которые позволяют уменьшить случайный разброс результатов, сохраняя точность оценки, но с меньшим числом испытаний.
+
+Подготовка к расчету
+-) Записываем исходные данные:
+-) Количество больных клеток
+-) Количество здоровых клеток
+-) Минимальное число здоровых клеток, которые должны выжить
+-) Средняя скорость гибели для больных клеток
+-) Средняя скорость гибели для здоровых клеток
+-) Количество повторений для статистики
+
+Моделирование одного испытания
+-) Для каждой больной клетки: Генерируем случайное время ее гибели (по экспоненциальному закону)
+-) Для каждой здоровой клетки:Аналогично генерируем время ее гибели
+
+Находим:
+-) Время гибели последней больной клетки (максимум среди всех больных)
+-) Времена гибели здоровых клеток сортируем от поздних к ранним
+-) Выбираем время, когда остается ровно нужное количество здоровых клеток
+
+Уменьшает вариативность за счет аналитического расчета части вероятности
+Особенно эффективно при большой разнице интенсивностей гибели
+
+Сравниваем два времени:
+-) Когда погибла последняя больная клетка
+-) Когда остается заданное число здоровых клеток
+Если все больные погибли раньше - засчитываем успех
+
+Повторяем испытание много раз 
+-) Считаем долю успешных исходов от общего числа испытаний
+-) Эта доля и будет искомой вероятностью
+</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация9КонтекстноеМеню" id="16"/>
+			<ExtendedTooltip name="Декорация9РасширеннаяПодсказка" id="17"/>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация7" id="9">
+			<Font ref="style:LargeTextFont" kind="StyleItem"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Решение:</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация7КонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="Декорация7РасширеннаяПодсказка" id="11"/>
+		</LabelDecoration>
+		<Button name="РассчитатьВероятность" id="1">
 			<Type>UsualButton</Type>
-			<CommandName>Form.Command.Сгенерировать</CommandName>
-			<ExtendedTooltip name="СгенерироватьРасширеннаяПодсказка" id="2"/>
+			<CommandName>Form.Command.РассчитатьВероятность</CommandName>
+			<ExtendedTooltip name="РассчитатьВероятностьРасширеннаяПодсказка" id="2"/>
 		</Button>
 	</ChildItems>
 	<Attributes>
@@ -25,20 +110,20 @@
 		</Attribute>
 	</Attributes>
 	<Commands>
-		<Command name="Сгенерировать" id="1">
+		<Command name="РассчитатьВероятность" id="1">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сгенерировать</v8:content>
+					<v8:content>Рассчитать вероятность</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сгенерировать</v8:content>
+					<v8:content>Рассчитать вероятность</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>Сгенерировать</Action>
+			<Action>РассчитатьИВывестиРезультат</Action>
 		</Command>
 	</Commands>
 </Form>

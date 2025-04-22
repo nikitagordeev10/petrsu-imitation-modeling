@@ -1,19 +1,117 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
 	<ChildItems>
-		<PictureDecoration name="Декорация1" id="3">
+		<LabelDecoration name="Декорация2" id="6">
+			<Font ref="style:LargeTextFont" kind="StyleItem"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задача:</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация2КонтекстноеМеню" id="7"/>
+			<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="8"/>
+		</LabelDecoration>
+		<PictureDecoration name="Декорация5" id="15">
+			<Width>60</Width>
+			<Height>9</Height>
+			<PictureSize>Proportionally</PictureSize>
 			<Picture>
 				<xr:Ref>CommonPicture.Тема1_Задание4</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<Border width="1">
+				<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+			</Border>
+			<ContextMenu name="Декорация5КонтекстноеМеню" id="16"/>
+			<ExtendedTooltip name="Декорация5РасширеннаяПодсказка" id="17"/>
+		</PictureDecoration>
+		<LabelDecoration name="Декорация4" id="12">
+			<Font ref="style:LargeTextFont" kind="StyleItem"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>План решения:</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация4КонтекстноеМеню" id="13"/>
+			<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="14"/>
+		</LabelDecoration>
+		<PictureDecoration name="Декорация1" id="3">
+			<Width>60</Width>
+			<Height>9</Height>
+			<PictureSize>Proportionally</PictureSize>
+			<Picture>
+				<xr:Ref>CommonPicture.Фотоны</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Border width="1">
+				<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+			</Border>
 			<ContextMenu name="Декорация1КонтекстноеМеню" id="4"/>
 			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="5"/>
 		</PictureDecoration>
-		<Button name="Сгенерировать" id="1">
+		<LabelDecoration name="Декорация6" id="18">
+			<Width>60</Width>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Генерация количества фотонов:
+-) Используем распределение Пуассона с λ=2 для получения N
+-) Количество фотонов в событии будет N+1
+
+Моделирование каждого фотона:
+-) Для каждого фотона случайно выбираем точку испускания (равномерно по толщине слоя)
+-) Случайно выбираем направление движения (изотропное распределение)
+-) Вычисляем время достижения детектора
+-) Время прилета зависит от:
+--) Позиции рождения фотона (чем ближе к детектору, тем быстрее)
+--) Направления (фотоны, летящие перпендикулярно слою, прилетят быстрее)
+
+Проверка условий совпадения:
+-) Для всех возможных пар фотонов проверяем разницу во времени прихода
+-) Если хотя бы одна пара попала в окно совпадения (Δt ≤ 30 нс), считаем событие успешным
+
+Статистическая обработка:
+-) Многократно повторяем моделирование (метод Монте-Карло)
+-) Вероятность срабатывания = количество успешных событий / общее количество испытаний
+
+Допустим, сгенерировалось N=1 ⇒ 2 фотона:
+
+Фотон 1:
+Позиция: 0.3 м (ближе к левому краю)
+Угол: 60° ⇒ cos(60°)=0.5 &gt; 0 ⇒ летит вправо
+Время: (1-0.3)/(3·10⁸·0.5) ≈ 4.67·10⁻⁹ с
+
+Фотон 2:
+Позиция: 0.8 м
+Угол: 120° ⇒ cos(120°)=-0.5 &lt; 0 ⇒ летит влево
+Время: 0.8/(3·10⁸·0.5) ≈ 5.33·10⁻⁹ с
+
+Разница времен: |4.67 - 5.33|·10⁻⁹ ≈ 0.66·10⁻⁹ с = 0.66 нс &lt; 30 нс ⇒ СХЕМА СРАБОТАЛА</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация6КонтекстноеМеню" id="19"/>
+			<ExtendedTooltip name="Декорация6РасширеннаяПодсказка" id="20"/>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация3" id="9">
+			<Font ref="style:LargeTextFont" kind="StyleItem"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Решение:</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация3КонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="11"/>
+		</LabelDecoration>
+		<Button name="ВычислитьВероятностьСрабатывания" id="1">
 			<Type>UsualButton</Type>
-			<CommandName>Form.Command.Сгенерировать</CommandName>
-			<ExtendedTooltip name="СгенерироватьРасширеннаяПодсказка" id="2"/>
+			<CommandName>Form.Command.ВычислитьВероятностьСрабатывания</CommandName>
+			<ExtendedTooltip name="ВычислитьВероятностьСрабатыванияРасширеннаяПодсказка" id="2"/>
 		</Button>
 	</ChildItems>
 	<Attributes>
@@ -25,20 +123,20 @@
 		</Attribute>
 	</Attributes>
 	<Commands>
-		<Command name="Сгенерировать" id="1">
+		<Command name="ВычислитьВероятностьСрабатывания" id="1">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сгенерировать</v8:content>
+					<v8:content>Вычислить вероятность срабатывания</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сгенерировать</v8:content>
+					<v8:content>Вычислить вероятность срабатывания</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>Сгенерировать</Action>
+			<Action>ВычислитьВероятностьСрабатывания</Action>
 		</Command>
 	</Commands>
 </Form>

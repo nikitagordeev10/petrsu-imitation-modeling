@@ -1,25 +1,322 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
 	<ChildItems>
-		<PictureDecoration name="Задание" id="3">
+		<LabelDecoration name="Декорация1" id="6">
+			<Font ref="style:LargeTextFont" kind="StyleItem"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задача:</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация1КонтекстноеМеню" id="7"/>
+			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="8"/>
+		</LabelDecoration>
+		<PictureDecoration name="Задание1" id="24">
+			<Width>60</Width>
+			<Height>5</Height>
 			<Title formatted="false">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Задание</v8:content>
 				</v8:item>
 			</Title>
+			<PictureSize>Proportionally</PictureSize>
 			<Picture>
 				<xr:Ref>CommonPicture.Тема1_Задание1_2</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<Border width="1">
+				<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+			</Border>
+			<ContextMenu name="Задание1КонтекстноеМеню" id="25"/>
+			<ExtendedTooltip name="Задание1РасширеннаяПодсказка" id="26"/>
+		</PictureDecoration>
+		<LabelDecoration name="Декорация3" id="12">
+			<Font ref="style:LargeTextFont" kind="StyleItem"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>План решения:</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация3КонтекстноеМеню" id="13"/>
+			<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="14"/>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация7" id="21">
+			<Width>60</Width>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>1. Задаем параметры распределения
+
+Вектор средних (μ) - это "обычные средние значения"
+Вектор средних [0,0,0] (все переменные центрированы вокруг нуля).
+
+Матрица ковариации (Σ) - показывает, как связаны показатели.
+Матрицу ковариаций описывающую дисперсии каждой переменной (на диагонали), ковариации (корреляции) между переменными (вне диагонали)
+   1,  0.5, 0.2
+0.5,     1, 0.3
+0.2,  0.3,   1
+
+2. Генерация выборки из многомерного нормального распределения
+Используем разложение Холецкого для матрицы ковариации
+-) Находим матрицу L такую, что Σ = LL^T
+Матрица Σ раскладывается в произведение нижней треугольной матрицы L и её транспонированной версии L^T:
+-) Это позволяет преобразовать независимые нормальные величины в коррелированные</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация7КонтекстноеМеню" id="22"/>
+			<ExtendedTooltip name="Декорация7РасширеннаяПодсказка" id="23"/>
+		</LabelDecoration>
+		<PictureDecoration name="Задание2" id="27">
+			<Width>60</Width>
+			<Height>4</Height>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задание</v8:content>
+				</v8:item>
+			</Title>
+			<PictureSize>Proportionally</PictureSize>
+			<Picture>
+				<xr:Ref>CommonPicture.ХолецкийФормула</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Border width="1">
+				<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+			</Border>
+			<ContextMenu name="Задание2КонтекстноеМеню" id="28"/>
+			<ExtendedTooltip name="Задание2РасширеннаяПодсказка" id="29"/>
+		</PictureDecoration>
+		<PictureDecoration name="Задание3" id="30">
+			<Width>60</Width>
+			<Height>9</Height>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задание</v8:content>
+				</v8:item>
+			</Title>
+			<PictureSize>Proportionally</PictureSize>
+			<Picture>
+				<xr:Ref>CommonPicture.Холецкий</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Border width="1">
+				<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+			</Border>
+			<ContextMenu name="Задание3КонтекстноеМеню" id="31"/>
+			<ExtendedTooltip name="Задание3РасширеннаяПодсказка" id="32"/>
+		</PictureDecoration>
+		<LabelDecoration name="Декорация8" id="33">
+			<Width>60</Width>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Для каждого наблюдения:
+-) Генерируем вектор независимых стандартных нормальных величин Z
+-) Преобразуем их в многомерное нормальное распределение: X = μ + LZ
+-) Сохраняем полученные значения в матрицу выборки
+</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация8КонтекстноеМеню" id="34"/>
+			<ExtendedTooltip name="Декорация8РасширеннаяПодсказка" id="35"/>
+		</LabelDecoration>
+		<PictureDecoration name="Задание" id="3">
+			<Width>60</Width>
+			<Height>9</Height>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задание</v8:content>
+				</v8:item>
+			</Title>
+			<PictureSize>Proportionally</PictureSize>
+			<Picture>
+				<xr:Ref>CommonPicture.МетодБоксаМюллера</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Border width="1">
+				<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+			</Border>
 			<ContextMenu name="ЗаданиеКонтекстноеМеню" id="4"/>
 			<ExtendedTooltip name="ЗаданиеРасширеннаяПодсказка" id="5"/>
 		</PictureDecoration>
-		<Button name="Сгенерировать" id="1">
+		<LabelDecoration name="Декорация10" id="39">
+			<Width>60</Width>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>3. Вычисление выборочной матрицы ковариации
+статистическую характеристику, которая показывает:
+Насколько переменные отклоняются от своих средних
+Как они связаны между собой (если одна растёт, другая тоже растёт или падает)
+
+-) Для каждой переменной вычисляем выборочное среднее
+-) Для каждой пары переменных вычисляем ковариацию - меру совместной изменчивости
+Положительная ковариация: если одна переменная растёт, другая тоже имеет тенденцию расти.
+Отрицательная: если одна растёт, другая обычно падает.
+Ноль: связи нет.
+
+-) Формируем симметричную матрицу ковариации из полученных значений
+</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация10КонтекстноеМеню" id="40"/>
+			<ExtendedTooltip name="Декорация10РасширеннаяПодсказка" id="41"/>
+		</LabelDecoration>
+		<PictureDecoration name="Задание7" id="51">
+			<Width>60</Width>
+			<Height>3</Height>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задание</v8:content>
+				</v8:item>
+			</Title>
+			<PictureSize>Proportionally</PictureSize>
+			<Picture>
+				<xr:Ref>CommonPicture.СреднееЗначение</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Border width="1">
+				<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+			</Border>
+			<ContextMenu name="Задание7КонтекстноеМеню" id="52"/>
+			<ExtendedTooltip name="Задание7РасширеннаяПодсказка" id="53"/>
+		</PictureDecoration>
+		<PictureDecoration name="Задание8" id="54">
+			<Width>60</Width>
+			<Height>4</Height>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задание</v8:content>
+				</v8:item>
+			</Title>
+			<PictureSize>Proportionally</PictureSize>
+			<Picture>
+				<xr:Ref>CommonPicture.Ковариация</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Border width="1">
+				<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+			</Border>
+			<ContextMenu name="Задание8КонтекстноеМеню" id="55"/>
+			<ExtendedTooltip name="Задание8РасширеннаяПодсказка" id="56"/>
+		</PictureDecoration>
+		<PictureDecoration name="Задание6" id="48">
+			<Width>60</Width>
+			<Height>6</Height>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задание</v8:content>
+				</v8:item>
+			</Title>
+			<PictureSize>Proportionally</PictureSize>
+			<Picture>
+				<xr:Ref>CommonPicture.МатрицаКовариации</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Border width="1">
+				<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+			</Border>
+			<ContextMenu name="Задание6КонтекстноеМеню" id="49"/>
+			<ExtendedTooltip name="Задание6РасширеннаяПодсказка" id="50"/>
+		</PictureDecoration>
+		<LabelDecoration name="Декорация9" id="36">
+			<Width>60</Width>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>4. Проверка гипотезы о коэффициенте корреляции
+
+-) Выбираем две переменные для анализа (например, X1 и X2)
+-) Вычисляем выборочный коэффициент корреляции:
+-) r = Cov(X1, X2) / √(Var(X1) * Var(X2))
+
+-) Формулируем гипотезы:
+H0: ρ = ρ0 (нулевая гипотеза)
+H1: ρ ≠ ρ0 (альтернативная гипотеза)
+
+-) Применяем Z-преобразование Фишера:
+z(r) = 0.5 * ln((1+r)/(1-r))
+z(ρ0) = 0.5 * ln((1+ρ0)/(1-ρ0))
+
+-) Вычисляем тестовую статистику:
+Z = (z(r) - z(ρ0)) * √(n-3)
+
+-) Определяем p-значение (двусторонний тест)
+
+-) Принимаем решение:
+Если p &lt; 0.05, отвергаем H0
+Иначе не отвергаем H0</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация9КонтекстноеМеню" id="37"/>
+			<ExtendedTooltip name="Декорация9РасширеннаяПодсказка" id="38"/>
+		</LabelDecoration>
+		<PictureDecoration name="Задание5" id="45">
+			<Width>60</Width>
+			<Height>9</Height>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задание</v8:content>
+				</v8:item>
+			</Title>
+			<PictureSize>Proportionally</PictureSize>
+			<Picture>
+				<xr:Ref>CommonPicture.ПреобразованиеФишера</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Border width="1">
+				<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+			</Border>
+			<ContextMenu name="Задание5КонтекстноеМеню" id="46"/>
+			<ExtendedTooltip name="Задание5РасширеннаяПодсказка" id="47"/>
+		</PictureDecoration>
+		<PictureDecoration name="Задание4" id="42">
+			<Width>60</Width>
+			<Height>10</Height>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задание</v8:content>
+				</v8:item>
+			</Title>
+			<PictureSize>Proportionally</PictureSize>
+			<Picture>
+				<xr:Ref>CommonPicture.ДвустороннийКритерий</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Border width="1">
+				<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+			</Border>
+			<ContextMenu name="Задание4КонтекстноеМеню" id="43"/>
+			<ExtendedTooltip name="Задание4РасширеннаяПодсказка" id="44"/>
+		</PictureDecoration>
+		<LabelDecoration name="Декорация2" id="9">
+			<Font ref="style:LargeTextFont" kind="StyleItem"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Решение:</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация2КонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="11"/>
+		</LabelDecoration>
+		<Button name="ПроверитьГипотезу" id="1">
 			<Type>UsualButton</Type>
-			<CommandName>Form.Command.Сгенерировать</CommandName>
-			<ExtendedTooltip name="СгенерироватьРасширеннаяПодсказка" id="2"/>
+			<CommandName>Form.Command.ПроверитьГипотезу</CommandName>
+			<ExtendedTooltip name="ПроверитьГипотезуРасширеннаяПодсказка" id="2"/>
 		</Button>
 	</ChildItems>
 	<Attributes>
@@ -31,20 +328,20 @@
 		</Attribute>
 	</Attributes>
 	<Commands>
-		<Command name="Сгенерировать" id="1">
+		<Command name="ПроверитьГипотезу" id="1">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сгенерировать</v8:content>
+					<v8:content>Проверить гипотезу</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сгенерировать</v8:content>
+					<v8:content>Проверить гипотезу</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>Сгенерировать</Action>
+			<Action>ПроверитьГипотезу</Action>
 		</Command>
 	</Commands>
 </Form>

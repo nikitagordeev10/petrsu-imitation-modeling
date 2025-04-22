@@ -277,7 +277,29 @@
 			<CommonPicture>Треугольники3</CommonPicture>
 			<CommonPicture>Геликоид1</CommonPicture>
 			<CommonPicture>Геликоид2</CommonPicture>
-			<CommonForm>Форма</CommonForm>
+			<CommonPicture>КритическиеЗначенияDКритерияКолмагороваСмирнова</CommonPicture>
+			<CommonPicture>ЗначенияКосинус</CommonPicture>
+			<CommonPicture>МетодОтклонения</CommonPicture>
+			<CommonPicture>ТеоретическаяФункцияРаспределения</CommonPicture>
+			<CommonPicture>ДваТреугольника</CommonPicture>
+			<CommonPicture>ПроверкаПолуплоскостей</CommonPicture>
+			<CommonPicture>НайтиПлощадьПоКоординатам</CommonPicture>
+			<CommonPicture>Фотоны</CommonPicture>
+			<CommonPicture>РасчетНачальнойСтоимостиПортфеля</CommonPicture>
+			<CommonPicture>ГБД</CommonPicture>
+			<CommonPicture>СтоимостьПортфеляВМоментТ</CommonPicture>
+			<CommonPicture>ВычислитьПотери</CommonPicture>
+			<CommonPicture>Квантиль</CommonPicture>
+			<CommonPicture>ХолецкийФормула</CommonPicture>
+			<CommonPicture>Холецкий</CommonPicture>
+			<CommonPicture>МетодБоксаМюллера</CommonPicture>
+			<CommonPicture>ПреобразованиеФишера</CommonPicture>
+			<CommonPicture>ДвустороннийКритерий</CommonPicture>
+			<CommonPicture>СреднееЗначение</CommonPicture>
+			<CommonPicture>Ковариация</CommonPicture>
+			<CommonPicture>МатрицаКовариации</CommonPicture>
+			<CommonModule>Математика</CommonModule>
+			<CommonForm>ИмитационноеМоделирование</CommonForm>
 			<DataProcessor>ГенерацияИПроверкаРаспределения</DataProcessor>
 			<DataProcessor>ОценкаКовариацийИПроверкаКорреляции</DataProcessor>
 			<DataProcessor>ПлощадьПересеченияТреугольников</DataProcessor>

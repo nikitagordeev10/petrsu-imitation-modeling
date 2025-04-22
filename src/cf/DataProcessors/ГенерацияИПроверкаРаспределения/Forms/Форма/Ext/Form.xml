@@ -1,28 +1,308 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
 	<ChildItems>
-		<PictureDecoration name="Задание" id="7">
-			<Width>50</Width>
+		<LabelDecoration name="Декорация1" id="10">
+			<Font ref="style:LargeTextFont" kind="StyleItem"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задача:</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация1КонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="12"/>
+		</LabelDecoration>
+		<PictureDecoration name="Задание1" id="16">
+			<Width>60</Width>
 			<Height>6</Height>
+			<HorizontalStretch>false</HorizontalStretch>
+			<VerticalStretch>false</VerticalStretch>
 			<Title formatted="false">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Задание</v8:content>
 				</v8:item>
 			</Title>
+			<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+			<PictureSize>Proportionally</PictureSize>
 			<Picture>
 				<xr:Ref>CommonPicture.Тема1_Задание1_1</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<Border width="1">
+				<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+			</Border>
+			<ContextMenu name="Задание1КонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="Задание1РасширеннаяПодсказка" id="18"/>
+		</PictureDecoration>
+		<LabelDecoration name="Декорация3" id="19">
+			<Font ref="style:LargeTextFont" kind="StyleItem"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>План решения:</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация3КонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="21"/>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация5" id="73">
+			<Width>60</Width>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задача состоит из двух частей: генерации выборки из заданного распределения и проверки гипотезы согласия.
+
+1. Генерация выборки методом отклонения (Неймана)
+
+Плотность распределения задана функцией:
+f(x) = (2 + cos(x)) / (4π) при x ∈ [0, 2π], и 0 в противном случае
+
+Максимум  f(x)=  3 / 4π  (т.к. cosx ≤ 1).</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация5КонтекстноеМеню" id="74"/>
+			<ExtendedTooltip name="Декорация5РасширеннаяПодсказка" id="75"/>
+		</LabelDecoration>
+		<PictureDecoration name="Задание2" id="70">
+			<Width>60</Width>
+			<Height>10</Height>
+			<HorizontalStretch>false</HorizontalStretch>
+			<VerticalStretch>false</VerticalStretch>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задание</v8:content>
+				</v8:item>
+			</Title>
+			<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+			<PictureSize>Proportionally</PictureSize>
+			<Picture>
+				<xr:Ref>CommonPicture.ЗначенияКосинус</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Border width="1">
+				<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+			</Border>
+			<ContextMenu name="Задание2КонтекстноеМеню" id="71"/>
+			<ExtendedTooltip name="Задание2РасширеннаяПодсказка" id="72"/>
+		</PictureDecoration>
+		<LabelDecoration name="Декорация4" id="67">
+			<Width>60</Width>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Генерируем точки (X,Y) в прямоугольнике [0,2π]×[0,3/4π]
+
+Если точка попадает под кривую f (X), т.е. Y ≤ f (X), принимаем X как элемент выборки. Если точка попадает над кривой, мы её отвергаем и пробуем снова.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация4КонтекстноеМеню" id="68"/>
+			<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="69"/>
+		</LabelDecoration>
+		<PictureDecoration name="Задание3" id="76">
+			<Width>60</Width>
+			<Height>10</Height>
+			<HorizontalStretch>false</HorizontalStretch>
+			<VerticalStretch>false</VerticalStretch>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задание</v8:content>
+				</v8:item>
+			</Title>
+			<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+			<PictureSize>Proportionally</PictureSize>
+			<Picture>
+				<xr:Ref>CommonPicture.МетодОтклонения</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Border width="1">
+				<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+			</Border>
+			<ContextMenu name="Задание3КонтекстноеМеню" id="77"/>
+			<ExtendedTooltip name="Задание3РасширеннаяПодсказка" id="78"/>
+		</PictureDecoration>
+		<LabelDecoration name="Декорация6" id="79">
+			<Width>60</Width>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>2. Проверка гипотезы согласия (Колмогоров-Смирнов)
+
+Мы проверяем, насколько сильно реальная выборка (которую сгенерировали) отличается от идеального теоретического распределения.
+
+Гипотеза  H0: Выборка соответствует распределению f(x)
+
+Сортируем выборку по возрастанию.
+
+Считаем эмпирическую функцию распределения (ЭФР) 
+Fn (x) = количество элементов ≤ x / . Это функция, построенная по выборке.
+
+Сравниваем с теоретической функцией F(x). это "идеальная" функция, которая должна быть, если выборка действительно из нужного распределения.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация6КонтекстноеМеню" id="80"/>
+			<ExtendedTooltip name="Декорация6РасширеннаяПодсказка" id="81"/>
+		</LabelDecoration>
+		<PictureDecoration name="Задание4" id="82">
+			<Width>60</Width>
+			<Height>2</Height>
+			<HorizontalStretch>false</HorizontalStretch>
+			<VerticalStretch>false</VerticalStretch>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задание</v8:content>
+				</v8:item>
+			</Title>
+			<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+			<PictureSize>Proportionally</PictureSize>
+			<Picture>
+				<xr:Ref>CommonPicture.ТеоретическаяФункцияРаспределения</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Border width="1">
+				<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+			</Border>
+			<ContextMenu name="Задание4КонтекстноеМеню" id="83"/>
+			<ExtendedTooltip name="Задание4РасширеннаяПодсказка" id="84"/>
+		</PictureDecoration>
+		<LabelDecoration name="Декорация7" id="85">
+			<Width>60</Width>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вычисляем статистику  Dn = max∣Fn(x)−F(x)∣
+
+Сравниваем с критическим значением 
+Dn &lt; Dкрит, гипотеза H0 не отвергается
+
+Для уровня значимости  α = 0.05 Dкрит = 1.36 корень(n)
+</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация7КонтекстноеМеню" id="86"/>
+			<ExtendedTooltip name="Декорация7РасширеннаяПодсказка" id="87"/>
+		</LabelDecoration>
+		<PictureDecoration name="Задание" id="7">
+			<Width>60</Width>
+			<Height>21</Height>
+			<HorizontalStretch>false</HorizontalStretch>
+			<VerticalStretch>false</VerticalStretch>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задание</v8:content>
+				</v8:item>
+			</Title>
+			<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+			<PictureSize>Proportionally</PictureSize>
+			<Picture>
+				<xr:Ref>CommonPicture.КритическиеЗначенияDКритерияКолмагороваСмирнова</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Border width="1">
+				<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+			</Border>
 			<ContextMenu name="ЗаданиеКонтекстноеМеню" id="8"/>
 			<ExtendedTooltip name="ЗаданиеРасширеннаяПодсказка" id="9"/>
 		</PictureDecoration>
-		<Button name="СгенерироватьРаспределение" id="1">
+		<LabelDecoration name="Декорация2" id="13">
+			<Font ref="style:LargeTextFont" kind="StyleItem"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Решение:</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация2КонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="15"/>
+		</LabelDecoration>
+		<Button name="СгенерироватьВыборкуИПроверитьГипотезуСогласия" id="1">
 			<Type>UsualButton</Type>
-			<CommandName>Form.Command.СгенерироватьРаспределение</CommandName>
-			<ExtendedTooltip name="СгенерироватьРаспределениеРасширеннаяПодсказка" id="2"/>
+			<CommandName>Form.Command.СгенерироватьВыборкуИПроверитьГипотезуСогласия</CommandName>
+			<ExtendedTooltip name="СгенерироватьВыборкуИПроверитьГипотезуСогласияРасширеннаяПодсказка" id="2"/>
 		</Button>
+		<Table name="Выборка" id="32">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Выборка</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ВыборкаКонтекстноеМеню" id="33"/>
+			<AutoCommandBar name="ВыборкаКоманднаяПанель" id="34"/>
+			<ExtendedTooltip name="ВыборкаРасширеннаяПодсказка" id="35"/>
+			<SearchStringAddition name="ВыборкаСтрокаПоиска" id="36">
+				<AdditionSource>
+					<Item>Выборка</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ВыборкаСтрокаПоискаКонтекстноеМеню" id="37"/>
+				<ExtendedTooltip name="ВыборкаСтрокаПоискаРасширеннаяПодсказка" id="38"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ВыборкаСостояниеПросмотра" id="39">
+				<AdditionSource>
+					<Item>Выборка</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ВыборкаСостояниеПросмотраКонтекстноеМеню" id="40"/>
+				<ExtendedTooltip name="ВыборкаСостояниеПросмотраРасширеннаяПодсказка" id="41"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ВыборкаУправлениеПоиском" id="42">
+				<AdditionSource>
+					<Item>Выборка</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ВыборкаУправлениеПоискомКонтекстноеМеню" id="43"/>
+				<ExtendedTooltip name="ВыборкаУправлениеПоискомРасширеннаяПодсказка" id="44"/>
+			</SearchControlAddition>
+			<SelectedItemsActionsPanel name="ВыборкаПанельДействийВыделенныхСтрок" id="45"/>
+			<ChildItems>
+				<LabelField name="ВыборкаНомерСтроки" id="47">
+					<DataPath>Объект.Выборка.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ВыборкаНомерСтрокиКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="ВыборкаНомерСтрокиРасширеннаяПодсказка" id="49"/>
+					<SelectedItemsActionsPanel name="ВыборкаНомерСтрокиПанельДействийВыделенныхСтрок" id="50"/>
+				</LabelField>
+				<InputField name="ВыборкаЭлементВыборки" id="51">
+					<DataPath>Объект.Выборка.ЭлементВыборки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ВыборкаЭлементВыборкиКонтекстноеМеню" id="52"/>
+					<ExtendedTooltip name="ВыборкаЭлементВыборкиРасширеннаяПодсказка" id="53"/>
+					<SelectedItemsActionsPanel name="ВыборкаЭлементВыборкиПанельДействийВыделенныхСтрок" id="54"/>
+				</InputField>
+				<InputField name="ВыборкаЗначениеЭлемента" id="55">
+					<DataPath>Объект.Выборка.ЗначениеЭлемента</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ВыборкаЗначениеЭлементаКонтекстноеМеню" id="56"/>
+					<ExtendedTooltip name="ВыборкаЗначениеЭлементаРасширеннаяПодсказка" id="57"/>
+					<SelectedItemsActionsPanel name="ВыборкаЗначениеЭлементаПанельДействийВыделенныхСтрок" id="58"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<ChartField name="ДиаграммаЭлементы" id="59">
+			<DataPath>Объект.ДиаграммаЭлементы</DataPath>
+			<ContextMenu name="ДиаграммаЭлементыКонтекстноеМеню" id="60"/>
+			<ExtendedTooltip name="ДиаграммаЭлементыРасширеннаяПодсказка" id="61"/>
+			<SelectedItemsActionsPanel name="ДиаграммаЭлементыПанельДействийВыделенныхСтрок" id="62"/>
+		</ChartField>
+		<InputField name="ДиаграммаРаспределения" id="63">
+			<DataPath>Объект.ДиаграммаРаспределения</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДиаграммаРаспределенияКонтекстноеМеню" id="64"/>
+			<ExtendedTooltip name="ДиаграммаРаспределенияРасширеннаяПодсказка" id="65"/>
+			<SelectedItemsActionsPanel name="ДиаграммаРаспределенияПанельДействийВыделенныхСтрок" id="66"/>
+		</InputField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -31,33 +311,37 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 		</Attribute>
-		<Attribute name="Диаграмма" id="2">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Диаграмма</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.2/data/graphscheme">d5p1:FlowchartContextType</v8:Type>
-			</Type>
-		</Attribute>
 	</Attributes>
 	<Commands>
-		<Command name="СгенерироватьРаспределение" id="1">
+		<Command name="СгенерироватьВыборкуИПроверитьГипотезуСогласия" id="1">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сгенерировать распределение</v8:content>
+					<v8:content>Сгенерировать выборку и проверить гипотезу согласия</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сгенерировать распределение</v8:content>
+					<v8:content>Сгенерировать выборку и проверить гипотезу согласия</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>СгенерироватьРаспределение</Action>
+			<Action>СгенерироватьВыборкуИПроверитьГипотезуСогласия</Action>
+		</Command>
+		<Command name="Кнопка" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кнопка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кнопка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Кнопка</Action>
 		</Command>
 	</Commands>
 </Form>

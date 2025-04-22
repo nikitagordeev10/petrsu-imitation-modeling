@@ -1,18 +1,222 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
 	<ChildItems>
+		<LabelDecoration name="Декорация2" id="6">
+			<Font ref="style:LargeTextFont" kind="StyleItem"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задача:</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация2КонтекстноеМеню" id="7"/>
+			<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="8"/>
+		</LabelDecoration>
 		<PictureDecoration name="Декорация1" id="3">
+			<Width>60</Width>
+			<Height>12</Height>
+			<PictureSize>Proportionally</PictureSize>
 			<Picture>
 				<xr:Ref>CommonPicture.Тема1_Задание3</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<Border width="1">
+				<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+			</Border>
 			<ContextMenu name="Декорация1КонтекстноеМеню" id="4"/>
 			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="5"/>
 		</PictureDecoration>
+		<LabelDecoration name="Декорация8" id="15">
+			<Font ref="style:LargeTextFont" kind="StyleItem"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>План решения:</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация8КонтекстноеМеню" id="16"/>
+			<ExtendedTooltip name="Декорация8РасширеннаяПодсказка" id="17"/>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация9" id="18">
+			<Width>60</Width>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Value at Risk (VaR) — это максимальная сумма потерь, которую портфель может понести с заданной вероятностью (уровнем доверия) за определённый период времени.
+
+Если VaR = 1000 руб. при уровне доверия 95%, это означает, что с вероятностью 95% потери портфеля не превысят 1000 руб. за указанный срок.
+
+1. Исходные данные
+Параметры бумаг:
+-) S0_i — начальная цена бумаги вида i
+-) μ_i — ожидаемая доходность бумаги вида i
+-) σ_i — волатильность бумаги вида i
+-) n_i — количество бумаг вида i в портфеле
+
+Параметры модели:
+-) T — временной горизонт (в годах)
+-) α — уровень значимости (например, 0.05 для 95% доверительного интервала)
+-) num_simulations — количество симуляций Монте-Карло</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация9КонтекстноеМеню" id="19"/>
+			<ExtendedTooltip name="Декорация9РасширеннаяПодсказка" id="20"/>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация10" id="24">
+			<Width>60</Width>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>2. Расчет начальной стоимости портфеля</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация10КонтекстноеМеню" id="25"/>
+			<ExtendedTooltip name="Декорация10РасширеннаяПодсказка" id="26"/>
+		</LabelDecoration>
+		<PictureDecoration name="Декорация5" id="30">
+			<Width>60</Width>
+			<Height>3</Height>
+			<PictureSize>Proportionally</PictureSize>
+			<Picture>
+				<xr:Ref>CommonPicture.РасчетНачальнойСтоимостиПортфеля</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Border width="1">
+				<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+			</Border>
+			<ContextMenu name="Декорация5КонтекстноеМеню" id="31"/>
+			<ExtendedTooltip name="Декорация5РасширеннаяПодсказка" id="32"/>
+		</PictureDecoration>
+		<LabelDecoration name="Декорация11" id="27">
+			<Width>60</Width>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>3. Моделирование будущих цен бумаг
+
+Для каждой симуляции k = 1..num_simulations:
+Для каждой бумаги i = 1..m:
+-) Сгенерировать случайную величину Zi ∼ N(0,1)
+-) Рассчитать будущую цену по модели ГБД
+</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация11КонтекстноеМеню" id="28"/>
+			<ExtendedTooltip name="Декорация11РасширеннаяПодсказка" id="29"/>
+		</LabelDecoration>
+		<PictureDecoration name="Декорация6" id="33">
+			<Width>60</Width>
+			<Height>2</Height>
+			<PictureSize>Proportionally</PictureSize>
+			<Picture>
+				<xr:Ref>CommonPicture.ГБД</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Border width="1">
+				<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+			</Border>
+			<ContextMenu name="Декорация6КонтекстноеМеню" id="34"/>
+			<ExtendedTooltip name="Декорация6РасширеннаяПодсказка" id="35"/>
+		</PictureDecoration>
+		<LabelDecoration name="Декорация13" id="39">
+			<Width>60</Width>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рассчитать стоимость портфеля в момент T:
+</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация13КонтекстноеМеню" id="40"/>
+			<ExtendedTooltip name="Декорация13РасширеннаяПодсказка" id="41"/>
+		</LabelDecoration>
+		<PictureDecoration name="Декорация4" id="21">
+			<Width>60</Width>
+			<Height>3</Height>
+			<PictureSize>Proportionally</PictureSize>
+			<Picture>
+				<xr:Ref>CommonPicture.СтоимостьПортфеляВМоментТ</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Border width="1">
+				<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+			</Border>
+			<ContextMenu name="Декорация4КонтекстноеМеню" id="22"/>
+			<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="23"/>
+		</PictureDecoration>
+		<LabelDecoration name="Декорация12" id="36">
+			<Width>60</Width>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вычислить потери:
+</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация12КонтекстноеМеню" id="37"/>
+			<ExtendedTooltip name="Декорация12РасширеннаяПодсказка" id="38"/>
+		</LabelDecoration>
+		<PictureDecoration name="Декорация14" id="42">
+			<Width>60</Width>
+			<Height>2</Height>
+			<PictureSize>Proportionally</PictureSize>
+			<Picture>
+				<xr:Ref>CommonPicture.ВычислитьПотери</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Border width="1">
+				<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+			</Border>
+			<ContextMenu name="Декорация14КонтекстноеМеню" id="43"/>
+			<ExtendedTooltip name="Декорация14РасширеннаяПодсказка" id="44"/>
+		</PictureDecoration>
+		<LabelDecoration name="Декорация7" id="12">
+			<Width>60</Width>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>4. Расчет VaR
+
+Упорядочить все смоделированные значения потерь LT по возрастанию.
+Найти квантиль (значение, которое заданная случайная величина не превышает с фиксированной вероятностью) уровня 1−α
+
+</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация7КонтекстноеМеню" id="13"/>
+			<ExtendedTooltip name="Декорация7РасширеннаяПодсказка" id="14"/>
+		</LabelDecoration>
+		<PictureDecoration name="Декорация15" id="45">
+			<Width>60</Width>
+			<Height>2</Height>
+			<PictureSize>Proportionally</PictureSize>
+			<Picture>
+				<xr:Ref>CommonPicture.Квантиль</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Border width="1">
+				<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+			</Border>
+			<ContextMenu name="Декорация15КонтекстноеМеню" id="46"/>
+			<ExtendedTooltip name="Декорация15РасширеннаяПодсказка" id="47"/>
+		</PictureDecoration>
+		<LabelDecoration name="Декорация3" id="9">
+			<Font ref="style:LargeTextFont" kind="StyleItem"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Решение:</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация3КонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="11"/>
+		</LabelDecoration>
 		<Button name="Сгенерировать" id="1">
 			<Type>UsualButton</Type>
-			<CommandName>Form.Command.Сгенерировать</CommandName>
+			<CommandName>Form.Command.ВыполнитьРасчетVaR</CommandName>
 			<ExtendedTooltip name="СгенерироватьРасширеннаяПодсказка" id="2"/>
 		</Button>
 	</ChildItems>
@@ -25,20 +229,20 @@
 		</Attribute>
 	</Attributes>
 	<Commands>
-		<Command name="Сгенерировать" id="1">
+		<Command name="ВыполнитьРасчетVaR" id="1">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сгенерировать</v8:content>
+					<v8:content>Выполнить расчет VaR</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сгенерировать</v8:content>
+					<v8:content>Выполнить расчет va R</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>Сгенерировать</Action>
+			<Action>ВыполнитьРасчетVaR</Action>
 		</Command>
 	</Commands>
 </Form>

@@ -1,43 +1,211 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
 	<ChildItems>
+		<LabelDecoration name="Декорация5" id="15">
+			<Font ref="style:LargeTextFont" kind="StyleItem"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задача:</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация5КонтекстноеМеню" id="16"/>
+			<ExtendedTooltip name="Декорация5РасширеннаяПодсказка" id="17"/>
+		</LabelDecoration>
 		<PictureDecoration name="Декорация1" id="1">
+			<Width>60</Width>
+			<Height>2</Height>
+			<PictureSize>Proportionally</PictureSize>
 			<Picture>
 				<xr:Ref>CommonPicture.Тема1_Задание2</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<Border width="1">
+				<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+			</Border>
 			<ContextMenu name="Декорация1КонтекстноеМеню" id="2"/>
 			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="3"/>
 		</PictureDecoration>
+		<LabelDecoration name="Декорация8" id="24">
+			<Font ref="style:LargeTextFont" kind="StyleItem"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>План решения:</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация8КонтекстноеМеню" id="25"/>
+			<ExtendedTooltip name="Декорация8РасширеннаяПодсказка" id="26"/>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация13" id="39">
+			<Width>60</Width>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тестовые примеры
+Два пересекающихся треугольника.
+Два треугольника с меньшим пересечением.
+Треугольники с общей стороной.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация13КонтекстноеМеню" id="40"/>
+			<ExtendedTooltip name="Декорация13РасширеннаяПодсказка" id="41"/>
+		</LabelDecoration>
 		<PictureDecoration name="Декорация2" id="6">
+			<Width>50</Width>
+			<PictureSize>Proportionally</PictureSize>
 			<Picture>
 				<xr:Ref>CommonPicture.Треугольники1</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<Border width="1">
+				<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+			</Border>
 			<ContextMenu name="Декорация2КонтекстноеМеню" id="7"/>
 			<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="8"/>
 		</PictureDecoration>
 		<PictureDecoration name="Декорация3" id="9">
+			<Width>50</Width>
+			<PictureSize>Proportionally</PictureSize>
 			<Picture>
 				<xr:Ref>CommonPicture.Треугольники2</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<Border width="1">
+				<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+			</Border>
 			<ContextMenu name="Декорация3КонтекстноеМеню" id="10"/>
 			<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="11"/>
 		</PictureDecoration>
 		<PictureDecoration name="Декорация4" id="12">
+			<Width>50</Width>
+			<PictureSize>Proportionally</PictureSize>
 			<Picture>
 				<xr:Ref>CommonPicture.Треугольники3</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<Border width="1">
+				<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+			</Border>
 			<ContextMenu name="Декорация4КонтекстноеМеню" id="13"/>
 			<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="14"/>
 		</PictureDecoration>
-		<Button name="Сгенерировать" id="4">
+		<LabelDecoration name="Декорация9" id="27">
+			<Width>60</Width>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Определить ограничивающий прямоугольник (bounding box)
+Найти минимальные и максимальные значения x и y среди всех вершин обоих треугольников. Это даст прямоугольник, в котором лежат оба треугольника
+
+</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация9КонтекстноеМеню" id="28"/>
+			<ExtendedTooltip name="Декорация9РасширеннаяПодсказка" id="29"/>
+		</LabelDecoration>
+		<PictureDecoration name="Декорация15" id="45">
+			<Width>50</Width>
+			<Height>7</Height>
+			<PictureSize>Proportionally</PictureSize>
+			<Picture>
+				<xr:Ref>CommonPicture.ДваТреугольника</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Border width="1">
+				<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+			</Border>
+			<ContextMenu name="Декорация15КонтекстноеМеню" id="46"/>
+			<ExtendedTooltip name="Декорация15РасширеннаяПодсказка" id="47"/>
+		</PictureDecoration>
+		<LabelDecoration name="Декорация10" id="30">
+			<Width>60</Width>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Генерировать случайные точки внутри этого прямоугольника
+Для каждой точки случайным образом выбираем x в пределах [x_min, x_max] и y в пределах [y_min, y_max].
+
+</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация10КонтекстноеМеню" id="31"/>
+			<ExtendedTooltip name="Декорация10РасширеннаяПодсказка" id="32"/>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация11" id="33">
+			<Width>60</Width>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверка, попадает ли точка в оба треугольника одновременно.
+
+Проверка полуплоскостей
+Если хотя бы одна из сторон треугольника «разводит» противолежащую ей вершину и точку по разным полуплоскостям, то точка лежит вне треугольника. Иначе, если точка принадлежит хотя бы одной из прямых, содержащих стороны треугольника, то она находится на границе треугольника. Иначе точка лежит внутри треугольника.
+
+https://habr.com/ru/articles/147691/
+</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация11КонтекстноеМеню" id="34"/>
+			<ExtendedTooltip name="Декорация11РасширеннаяПодсказка" id="35"/>
+		</LabelDecoration>
+		<PictureDecoration name="Декорация14" id="42">
+			<Width>50</Width>
+			<Height>7</Height>
+			<PictureSize>Proportionally</PictureSize>
+			<Picture>
+				<xr:Ref>CommonPicture.ПроверкаПолуплоскостей</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Border width="1">
+				<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+			</Border>
+			<ContextMenu name="Декорация14КонтекстноеМеню" id="43"/>
+			<ExtendedTooltip name="Декорация14РасширеннаяПодсказка" id="44"/>
+		</PictureDecoration>
+		<LabelDecoration name="Декорация12" id="36">
+			<Width>60</Width>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расчет площади пересечения на основе доли попавших точек
+Площадь пересечения ≈ (количество точек внутри пересечения / общее количество точек) * площадь ограничивающего прямоугольника.
+
+</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация12КонтекстноеМеню" id="37"/>
+			<ExtendedTooltip name="Декорация12РасширеннаяПодсказка" id="38"/>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация7" id="21">
+			<Width>60</Width>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Метод Монте-Карло дает приближенное значение площади, точность которого возрастает с увеличением количества генерируемых точек.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация7КонтекстноеМеню" id="22"/>
+			<ExtendedTooltip name="Декорация7РасширеннаяПодсказка" id="23"/>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация6" id="18">
+			<Font ref="style:LargeTextFont" kind="StyleItem"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Решение:</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация6КонтекстноеМеню" id="19"/>
+			<ExtendedTooltip name="Декорация6РасширеннаяПодсказка" id="20"/>
+		</LabelDecoration>
+		<Button name="ВычислитьПлощадьПересеченияТреугольников" id="4">
 			<Type>UsualButton</Type>
-			<CommandName>Form.Command.Сгенерировать</CommandName>
-			<ExtendedTooltip name="СгенерироватьРасширеннаяПодсказка" id="5"/>
+			<CommandName>Form.Command.ВычислитьПлощадьПересеченияТреугольников</CommandName>
+			<ExtendedTooltip name="ВычислитьПлощадьПересеченияТреугольниковРасширеннаяПодсказка" id="5"/>
 		</Button>
 	</ChildItems>
 	<Attributes>
@@ -49,20 +217,20 @@
 		</Attribute>
 	</Attributes>
 	<Commands>
-		<Command name="Сгенерировать" id="1">
+		<Command name="ВычислитьПлощадьПересеченияТреугольников" id="1">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сгенерировать</v8:content>
+					<v8:content>Вычислить площадь пересечения треугольников</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сгенерировать</v8:content>
+					<v8:content>Вычислить площадь пересечения треугольников</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>Сгенерировать</Action>
+			<Action>ВычислитьПлощадьПересеченияТреугольников</Action>
 		</Command>
 	</Commands>
 </Form>
